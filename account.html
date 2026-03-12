@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>StayNest | Contact</title><link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head><body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <a class="logo" href="index.html"><span class="logo-badge">SN</span> StayNest</a>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Rooms</a></li>
+              <li><a href="cart.html">Booking</a></li>
+              <li><a href="account.html">Contact</a></li>
+            </ul>
+          </nav>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggler()" alt="menu">
+        </div>
+      </div>
+    </div>
+    <div class="page-header"><div class="container"><h1>Contact & Inquiry</h1><p>Send us your travel dates and questions.</p></div></div><div class="section"><div class="small-container detail-layout"><div class="panel"><h2>Get in touch</h2><div class="form-grid"><input placeholder="Your name"><input placeholder="Phone number"><input placeholder="Email"><select><option>Inquiry type</option><option>Room booking</option><option>Group booking</option><option>Pricing</option><option>Other</option></select></div><textarea placeholder="Write your message"></textarea><a href="#" class="btn">Send Inquiry</a></div><div class="panel"><h2>Hotel information</h2><p><strong>StayNest Hotel</strong><br>45 Sea View Road, Colombo<br>Sri Lanka</p><div class="spec-list"><div class="spec"><strong>Phone</strong>+94 77 123 4567</div><div class="spec"><strong>Email</strong>support@staynest.com</div><div class="spec"><strong>Check-in</strong>2:00 PM</div><div class="spec"><strong>Check-out</strong>11:00 AM</div></div><p>For custom packages, airport pickup, and family reservations, please contact us directly.</p></div></div></div><div class="footer"><div class="container center">Thanks for visiting StayNest.</div></div>
+<script>
+var menuItems=document.getElementById("menuItems");
+if(menuItems && window.innerWidth<901){menuItems.style.maxHeight="0px";}
+function menutoggler(){if(menuItems.style.maxHeight==="0px"||menuItems.style.maxHeight===""){menuItems.style.maxHeight="260px";}else{menuItems.style.maxHeight="0px";}}
+</script>
+</body></html>

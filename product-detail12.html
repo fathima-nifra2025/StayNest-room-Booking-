@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Grand Family Villa | StayNest</title><link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head><body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <a class="logo" href="index.html"><span class="logo-badge">SN</span> StayNest</a>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Rooms</a></li>
+              <li><a href="cart.html">Booking</a></li>
+              <li><a href="account.html">Contact</a></li>
+            </ul>
+          </nav>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggler()" alt="menu">
+        </div>
+      </div>
+    </div>
+    <div class="page-header"><div class="container"><h1>Grand Family Villa</h1><p>$240 / night • 6 Guests • Private lawn</p></div></div><div class="section"><div class="small-container detail-layout"><div class="detail-visual">🏡</div><div class="panel"><h2>Room details</h2><p>Large villa-style stay for families, with multiple beds, private lawn, dining space, and extra privacy.</p><div class="spec-list"><div class="spec"><strong>Price</strong>$240 / night</div><div class="spec"><strong>Capacity</strong>6 Guests</div><div class="spec"><strong>Room Size</strong>720 sq ft</div><div class="spec"><strong>Best Feature</strong>Private lawn</div></div><h2>Facilities</h2><p>Air conditioning, Wi‑Fi, smart TV, private bathroom, room service, and fresh linen.</p><a href="cart.html" class="btn">Book This Room</a> <a href="product.html" class="btn btn-outline" style="color:var(--primary);border-color:var(--primary);">Back to Rooms</a></div></div></div><div class="footer"><div class="container center">Need help? Contact support@staynest.com</div></div>
+<script>
+var menuItems=document.getElementById("menuItems");
+if(menuItems && window.innerWidth<901){menuItems.style.maxHeight="0px";}
+function menutoggler(){if(menuItems.style.maxHeight==="0px"||menuItems.style.maxHeight===""){menuItems.style.maxHeight="260px";}else{menuItems.style.maxHeight="0px";}}
+</script>
+</body></html>

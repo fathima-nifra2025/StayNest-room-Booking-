@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>StayNest | Booking</title><link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head><body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <a class="logo" href="index.html"><span class="logo-badge">SN</span> StayNest</a>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Rooms</a></li>
+              <li><a href="cart.html">Booking</a></li>
+              <li><a href="account.html">Contact</a></li>
+            </ul>
+          </nav>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggler()" alt="menu">
+        </div>
+      </div>
+    </div>
+    <div class="page-header"><div class="container"><h1>Room Booking</h1><p>Review sample pricing and fill the reservation form.</p></div></div><div class="section"><div class="small-container summary"><div class="table-wrap"><table><thead><tr><th>Room Type</th><th>Nights</th><th>Guests</th><th>Amount</th></tr></thead><tbody><tr><td>Deluxe Ocean Room</td><td>2</td><td>2</td><td>$240</td></tr><tr><td>Classic Queen Room</td><td>1</td><td>2</td><td>$80</td></tr><tr><td>Family Garden Suite</td><td>3</td><td>4</td><td>$450</td></tr><tr><th colspan="3">Estimated total</th><th>$770</th></tr></tbody></table></div><div class="panel"><h2>Reservation form</h2><div class="form-grid"><input placeholder="Full name"><input placeholder="Email address"><input type="date"><input type="date"><select><option>Select room</option><option>Deluxe Ocean Room</option><option>Classic Queen Room</option><option>Family Garden Suite</option><option>Skyline Penthouse</option></select><select><option>Guests</option><option>1 Guest</option><option>2 Guests</option><option>4 Guests</option><option>6 Guests</option></select></div><textarea placeholder="Special requests"></textarea><a href="#" class="btn">Confirm Booking</a></div></div></div><div class="footer"><div class="container center">This is a frontend template. Connect it to backend or form handling later.</div></div>
+<script>
+var menuItems=document.getElementById("menuItems");
+if(menuItems && window.innerWidth<901){menuItems.style.maxHeight="0px";}
+function menutoggler(){if(menuItems.style.maxHeight==="0px"||menuItems.style.maxHeight===""){menuItems.style.maxHeight="260px";}else{menuItems.style.maxHeight="0px";}}
+</script>
+</body></html>
